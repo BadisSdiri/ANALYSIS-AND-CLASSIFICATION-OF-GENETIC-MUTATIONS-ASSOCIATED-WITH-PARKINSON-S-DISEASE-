@@ -25,5 +25,58 @@ This repository provides all necessary scripts, preprocessing steps, and visual 
 - Required libraries: `tensorflow`, `keras`, `pandas`, `numpy`, `matplotlib`, `librosa`, `scikit-learn`
 
 Install the required libraries:
+# Running the Project
+
+## Data Preprocessing
+1. **Load and Clean Data**  
+   - Import and clean the raw `gene_data.fasta` and `mutations.csv` files to prepare for segmentation.
+
+2. **Generate Segment Files**  
+   - Create `pathogenic_data.csv` and `normal_data.csv` by segmenting DNA sequences into 100-nucleotide segments around specified mutation points (positions 20, 50, 80).
+
+## Feature Extraction
+1. **FCGR Visualization**  
+   - Run the FCGR script to generate visual representations for k-mers of lengths 3, 4, 5, and 6.
+
+2. **DNA Sonification**  
+   - Use the sonification script to convert DNA sequences into audio signals. Then, extract MFCC, chroma, and spectral descriptors as sonar features for further analysis.
+
+## Classification Models
+1. **Train on FCGR Data**  
+   - Train CNN, CNN+LSTM, VGG16, and ResNet50 models on FCGR-generated images for classifying genetic mutation data.
+
+2. **Train on Sonar Features**  
+   - Train SVM and Random Forest models on the extracted sonar features.
+
+3. **Evaluate Model Performance**  
+   - The best accuracy achieved was **92.47% using CNN with k-mers 6 data**.
+
+## Analysis and Visualization
+- Access performance metrics, confusion matrices, and visual representations of model results in the results notebook.
+
+## Results
+- **CNN with k-mers 6 data** achieved a 92.47% accuracy rate, showcasing the potential of deep learning in genetic mutation analysis associated with Parkinson's Disease.
+
+## Future Work
+- **Explore Additional Genetic Markers**  
+   - Investigate more genetic markers and environmental factors to develop a more comprehensive model.
+
+- **Experiment with Advanced Architectures**  
+   - Test alternative deep learning architectures and new feature extraction techniques for improved results.
+
+## Contributing
+- Contributions are welcome! Please open an issue or submit a pull request if you have suggestions for improvements, feature additions, or optimizations.
+
+## License
+This project is licensed under the MIT License.
+
+---
+
+**Developed by Badis Sdiri**
+pip install tensorflow keras pandas numpy matplotlib librosa scikit-learn
+
+This README provides a clear structure, installation steps, usage, and a brief of your findings. Let me know if there are any additional details you'd like included!
 ```bash
 pip install tensorflow keras pandas numpy matplotlib librosa scikit-learn
+
+This README provides a clear structure, installation steps, usage, and a brief of your findings. Let me know if there are any additional details you'd like included!
