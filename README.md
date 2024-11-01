@@ -68,7 +68,7 @@ Install the required libraries:
 - Contributions are welcome! Please open an issue or submit a pull request if you have suggestions for improvements, feature additions, or optimizations.
 
 ## License
-This project is licensed under the MIT License.
+This project is licensed under the AGPL-3.0 License.
 
 ---
 
