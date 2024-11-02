@@ -73,9 +73,7 @@ This project is licensed under the AGPL-3.0 License.
 ---
 
 **Developed by Badis Sdiri**
-pip install tensorflow keras pandas numpy matplotlib librosa scikit-learn
 
-This README provides a clear structure, installation steps, usage, and a brief of your findings. Let me know if there are any additional details you'd like included!
 ```bash
 pip install tensorflow keras pandas numpy matplotlib librosa scikit-learn
 
